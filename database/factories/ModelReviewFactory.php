@@ -8,7 +8,7 @@ $factory->define(App\Model\Review::class, function (Faker $faker) {
         'product_id' => function() {
             return \App\Model\Product::all()->random();
         },
-        'cutomer' => $faker->name,
+        'customer' => $faker->name,
         'review' => $faker->paragraph,
         'start' => $faker->numberBetween(0, 5),
     ];
